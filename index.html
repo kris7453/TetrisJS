@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Tetris</title>
+	<style type = "text/css">
+		*
+		{
+			background-color: #000;
+			color: #FFF;
+		}
+
+		#canvas
+		{
+			position: absolute;
+				left: calc(50% - 300px);
+				top: calc(50% - 280px);
+		}
+	</style>
+
+</head>
+<body onload="Tetris.Control.init();">
+
+	<canvas id="canvas" width="600px" height="560px" style="background: url('images/splashscreen.png'); float: left">Your browser does not support canvas tag!</canvas>
+	<p id ="test" style = "width: 210px; margin: 10px 0px; float: left;"></p>
+	<p id ="test2" style = "width: 210px; margin: 10px 0px; float: left;"></p>
+	<p id ="test3" style = "width: 210px; margin: 10px 0px; float: left;"></p>
+	
+    <img src="images/pause.png" alt="pause" id="pause" style="display: none;" />
+    <img src="images/gameOver.png" alt="gameOver" id="gameOver" style="display: none;" />
+    <img src="images/bonusBackground.png" alt="bonusBackground" id="bonusBackground" style="display: none;" />
+	<img src="images/background.png" alt="background" id="background" style="display: none;" />
+	<img src="images/tetroids.png" alt="tetroids" id="tetroids" style="display: none;" />
+	<img src="images/tetroidsUnits.png" alt="units" id="tetroidUnits" style="display: none;" />
+	<img src="images/deleteMask.png" alt="mask" id="deleteMask" style="display: none;" />
+	<img src="images/deleteBonus.png" alt="bonus" id="deleteBonus" style="display: none;" />
+	<img src="images/numbers.png" alt="numbers" id="numbers" style="display: none;" />
+	
+    <img src="images/selectMusic.png" alt="music" id="music" style="display: none;" />
+    <img src="images/selectLevel.png" alt="level" id="level" style="display: none;" />
+    <img src="images/selectGame.png" alt="game" id="game" style="display: none;" />
+    <img src="images/menuPointer.png" alt="pointer" id="pointer" style="display: none;" />
+    <img src="images/menuBackground.png" alt="menuBackground" id="menuBackground" style="display: none;" />
+    <img src="images/splashscreen.png" alt="splashscreen" id="splashscreen" style="display: none;" />
+	
+    <script type="text/javascript" src="scripts/Music/Music.js"></script>
+    <script type="text/javascript" src = "scripts/Draw/Draw.js"></script>
+	<script type="text/javascript" src = "scripts/Tetroid/Tetroid.js"></script>
+	<script type="text/javascript" src = "scripts/Pattern/Pattern.js"></script>
+	<script type="text/javascript" src = "scripts/Matrix/Matrix.js"></script>
+	<script type="text/javascript" src = "scripts/Game/Game.js"></script>
+	<script type="text/javascript" src = "scripts/Game/Game.play.js"></script>
+	<script type="text/javascript" src = "scripts/Menu/Menu.js"></script>
+	<script type="text/javascript" src = "scripts/Control/Control.js"></script>
+	
+</body>
+</html>
